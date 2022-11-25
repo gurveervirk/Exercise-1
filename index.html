@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exercise-1</title>
+    <script>
+      function color() {
+        const c = ["red", "blue", "green", "orange"];
+        const i = Math.floor(Math.random() * c.length);
+        document.body.style.backgroundColor = c[i];
+      }
+    </script>
+    <style>
+        .container{
+            text-align: center;
+        }
+    </style>
+  </head>
+  <body id="ch" style="background-color: blue;">
+    <header>
+      <div class="container">
+        <button type="button" onclick="color()">Change Background</button>
+      </div>
+    </header>
+  </body>
+</html>
